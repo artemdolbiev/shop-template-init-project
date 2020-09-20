@@ -1,0 +1,108 @@
+.navbar-light .navbar-nav .nav-link {
+  white-space: nowrap;
+  color: #2c71b6;
+  font-size: 1.2rem;
+}
+
+.fa-shopping-cart {
+  font-size: 1.5rem;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.header-menu__navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header-menu__navbar-search {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 50px;
+  border: 1px solid #2c71b6;
+}
+
+.header-menu__cart-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  color: #2c71b6;
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.header-menu__cart-counter {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  color: #ffffff;
+  background-color: #2c71b6;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.navbar {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.header-menu__navbar-search .form-control {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 1.2rem;
+}
+
+.header-menu__navbar-search button {
+  margin: 5px;
+  padding: 0;
+  color: #ffffff;
+  border-color: #2c71b6;
+  background-color: #2c71b6;
+}
+
+.header-menu__navbar-search i {
+  display: block;
+  padding: 10px;
+}
+
+body {
+  background-image: url(../img/patt.png);
+  background-position: 50% 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav > .nav-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+  }
+  .navbar-nav > .nav-item:not(.show) {
+    border-left: 1px solid #2c71b6;
+  }
+  .navbar-nav > .nav-item:last-child {
+    border-right: 1px solid #2c71b6;
+  }
+  .navbar-nav {
+    width: calc(100% - 300px);
+    padding-right: 30px;
+    padding-left: 70px;
+  }
+  .header-menu__navbar-search .form-control {
+    width: 10rem;
+  }
+}

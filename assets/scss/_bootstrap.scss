@@ -1,0 +1,33 @@
+.navbar-nav > .nav-item {
+
+    @include md-min {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &:not(.show) {
+        @include md-min {
+            border-left: 1px solid $color-blue;
+        }
+    }
+
+    &:last-child {
+        @include md-min {
+            border-right: 1px solid $color-blue;
+        }
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    white-space: nowrap;
+    color: #2c71b6;
+    font-size: 1.2rem;
+}
+
+.fa-shopping-cart {
+    font-size: 1.5rem;
+}
+
+.btn {
+    border-radius: 0;
+}
