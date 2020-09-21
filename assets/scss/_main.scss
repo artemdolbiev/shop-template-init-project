@@ -35,4 +35,143 @@
     }
 }
 
+.page {
+
+    &-content {
+        margin-top: 30px;
+    }
+}
+
+.item {
+
+    &-wrapper {
+        position: relative;
+        margin-bottom: 30px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $color-light;
+        border-image: initial;
+
+    }
+
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+        background-color: rgba(255, 255, 255, 0.75);
+        overflow: hidden;
+    }
+
+    &-title {
+        padding-top: 0.75rem;
+        color: $color-light;
+        font-size: 1.75rem;
+    }
+
+    &-description {
+        color: $color-light;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    &-characteristics {
+        margin-top: $gap;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+
+        & span {
+            display: block;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            color: $color-light;
+        }
+    }
+
+    &-buttons {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        & button {
+            display: block;
+            width: 30px;
+            height: 30px;
+            padding: 0px;
+
+            &:last-child {
+                margin-top: 5px !important;
+            }
+
+            &:hover {
+                color: $color-light;
+                background-color: $color-blue;
+                border-color: $color-blue;
+            }
+        }
+    }
+
+    &-price {
+        text-align: center;
+        color: $color-light;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &-actions {
+        padding: 15px;
+
+        & button {
+            text-transform: uppercase;
+            color: $color-light;
+            font-weight: bold;
+            margin-bottom: 30px !important;
+            padding: 8px 5px 10px;
+            border-color: $color-light;
+            border-radius: 0px;
+
+            @include lg-min {
+                font-size: 1.15rem;
+            }
+
+            @include lg {
+                font-size: 0.9rem;
+            }
+
+            &:last-child  {
+                margin-bottom: 15px !important;
+                background-color:  rgba(255, 255, 255, 0.2);
+
+            }
+
+            & i {
+                margin-left: 5px;
+                font-size: 1rem;
+            }
+
+            &:hover {
+                color: $color-blue;
+                background-color: rgba(255, 255, 255, 0.7);
+                border-color: $color-light;
+            }
+        }
+    }
+}
+
+.page-pagination{
+
+    &__more {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 2rem;
+
+        & a {
+            color: $color-light;
+        }
+    }
+}
+
+
+
+
 

@@ -31,3 +31,9 @@
 .btn {
     border-radius: 0;
 }
+
+.btn-outline-success {
+    color: $color-blue;
+    border-color: $color-blue;
+    border-radius: 0px;
+}

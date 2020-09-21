@@ -25,11 +25,12 @@
         border-color: $color-light;
         border-radius: 0px;
     }
+
+    & legend {
+        font-weight: bold;
+    }
 }
 
-.sidebar-filter legend {
-    font-weight: bold;
-}
 
 .sidebar-filter .form-check {
     margin: 10px 0px;
