@@ -53,6 +53,11 @@
   background-color: #ffffff;
 }
 
+.header-menu__cart-btn:hover {
+  background-color: #2c71b6;
+  color: #ffffff;
+}
+
 .header-menu__cart-counter {
   position: absolute;
   top: -12px;
@@ -107,6 +112,19 @@
 body {
   background-image: url(../img/patt.png);
   background-position: 50% 0;
+}
+
+.page-footer {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.page-footer__copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #2c71b6;
+  font-size: 1.25rem;
 }
 
 .sidebar-filter {
