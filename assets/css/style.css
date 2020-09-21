@@ -103,6 +103,61 @@ body {
   background-position: 50% 0;
 }
 
+.sidebar-filter {
+  padding: 15px 30px 30px;
+  color: #ffffff;
+}
+
+.sidebar-filter__more {
+  display: block;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.sidebar-filter__submit {
+  background-color: #2c71b6;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 0px;
+}
+
+.sidebar-filter legend {
+  font-weight: bold;
+}
+
+.sidebar-filter .form-check {
+  margin: 10px 0px;
+}
+
+.sidebar-filter .form-check-input {
+  width: 0px;
+  height: 0px;
+}
+
+.sidebar-filter .form-check-input:checked::before {
+  background-color: #ffffff;
+}
+
+.sidebar-filter .form-check-input::before {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: 0.35rem;
+  content: "";
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+.sidebar-filter .form-check-label {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+}
+
 @media (min-width: 992px) {
   .navbar-nav > .nav-item {
     -webkit-box-flex: 1;
@@ -123,5 +178,15 @@ body {
   }
   .header-menu__navbar-search .form-control {
     width: 10rem;
+  }
+  .sidebar-filter {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-right: 1px solid #ffffff;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .sidebar-filter {
+    border-top: 1px solid #ffffff;
   }
 }

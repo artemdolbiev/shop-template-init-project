@@ -1,0 +1,66 @@
+.sidebar-filter {
+    padding: 15px 30px 30px;
+    color: $color-light;
+
+    @include md-min {
+        background-color: rgba(255, 255, 255, 0.25);
+        border-right: 1px solid $color-light;
+    }
+
+    @include md {
+        border-top: 1px solid $color-light;
+    }
+
+    &__more {
+        display: block;
+        margin-bottom: 30px;
+        color: $color-light;
+        font-size: 1.25rem;
+    }
+
+    &__submit {
+        background-color: $color-blue;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $color-light;
+        border-radius: 0px;
+    }
+}
+
+.sidebar-filter legend {
+    font-weight: bold;
+}
+
+.sidebar-filter .form-check {
+    margin: 10px 0px;
+}
+
+.sidebar-filter .form-check-input {
+    width: 0px;
+    height: 0px;
+}
+
+.sidebar-filter .form-check-input:checked::before {
+    background-color: $color-light;
+}
+
+.sidebar-filter .form-check-input{
+
+    &::before {
+        display: block;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-top: 0.35rem;
+        content: "";
+        border-width: 1px;
+        border-style: solid;
+        border-color: $color-light;
+        border-image: initial;
+    }
+}
+
+.sidebar-filter .form-check-label {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+}
+
