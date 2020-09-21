@@ -50,6 +50,13 @@
   border-radius: 15px;
 }
 
+.header-menu__carousel {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #ffffff;
+}
+
 .navbar {
   margin-right: -15px;
   margin-left: -15px;
@@ -77,6 +84,18 @@
 .header-menu__navbar-search i {
   display: block;
   padding: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 10;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
 body {
