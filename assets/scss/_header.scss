@@ -53,6 +53,12 @@
             background-color: $color-blue;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
             border-radius: 15px;
+            display: none;
+
+            &:hover {
+                background-color: $color-light;
+                color: $color-blue;
+            }
         }
     }
 
@@ -95,6 +101,7 @@
         }
     }
 }
+
 
 
 .carousel {

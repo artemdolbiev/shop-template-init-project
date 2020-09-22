@@ -18,6 +18,17 @@
   border-radius: 0px;
 }
 
+.btn-outline-success:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active {
+  color: #2c71b6;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
 .header-menu__navbar {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -72,6 +83,12 @@
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   border-radius: 15px;
+  display: none;
+}
+
+.header-menu__cart-counter:hover {
+  background-color: #ffffff;
+  color: #2c71b6;
 }
 
 .header-menu__carousel {
