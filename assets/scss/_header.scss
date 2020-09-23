@@ -20,6 +20,12 @@
                 display: block;
                 padding: 10px;
             }
+
+            @include md {
+                display: inline-flex;
+                border: 1px solid $color-blue;
+                width: calc(100% - 100px);
+            }
         }
     }
 
@@ -34,7 +40,11 @@
             border: none;
             border-radius: 0;
             background-color: $color-light;
-            
+
+            @include md {
+                margin-top: -10px !important;
+            }
+
             &:hover {
                 background-color: $color-blue;
                 color: $color-light;
@@ -98,6 +108,10 @@
 
         @include md-min {
             width: 10rem;
+        }
+
+        @include md {
+            flex-grow: 2;
         }
     }
 }

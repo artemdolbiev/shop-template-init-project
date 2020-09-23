@@ -395,6 +395,21 @@ body {
 }
 
 @media (max-width: 991.8px) {
+  .header-menu__navbar-search {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border: 1px solid #2c71b6;
+    width: calc(100% - 100px);
+  }
+  .header-menu__cart-btn {
+    margin-top: -10px !important;
+  }
+  .header-menu__navbar-search .form-control {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
   .sidebar-filter {
     border-top: 1px solid #ffffff;
   }
